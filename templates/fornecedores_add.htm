@@ -1,0 +1,272 @@
+<!doctype html><p align=center><font size=+1 color=red>Desenvolvido por Daniel Alves</font></p>
+<p align=center><font size=+1 color=red></font></p>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel Fornecedores add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Voltar à Lista</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Exibir</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Nome_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Nome}  r-vertical-field" 
+	data-signal-error-for="Nome{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Nome" data-fieldname="Nome" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Nome}">
+		{BEGIN Nome_label}{$label Fornecedores Nome }{END Nome_label}
+	</label>
+	<div class="r-edit-field">
+		{$Nome_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Nome">
+		<div class="text-muted" >
+		{$tooltip Fornecedores Nome }		</div>
+	</div>
+</div>
+
+
+{END Nome_fieldblock}
+											
+{BEGIN Telefone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Telefone}  r-vertical-field" 
+	data-signal-error-for="Telefone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="Telefone" data-fieldname="Telefone" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Telefone}">
+		{BEGIN Telefone_label}{$label Fornecedores Telefone }{END Telefone_label}
+	</label>
+	<div class="r-edit-field">
+		{$Telefone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Telefone">
+		<div class="text-muted" >
+		{$tooltip Fornecedores Telefone }		</div>
+	</div>
+</div>
+
+
+{END Telefone_fieldblock}
+											
+{BEGIN CNPJ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CNPJ}  r-vertical-field" 
+	data-signal-error-for="CNPJ{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="CNPJ" data-fieldname="CNPJ" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CNPJ}">
+		{BEGIN CNPJ_label}{$label Fornecedores CNPJ }{END CNPJ_label}
+	</label>
+	<div class="r-edit-field">
+		{$CNPJ_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CNPJ">
+		<div class="text-muted" >
+		{$tooltip Fornecedores CNPJ }		</div>
+	</div>
+</div>
+
+
+{END CNPJ_fieldblock}
+											
+{BEGIN Cidade_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Cidade}  r-vertical-field" 
+	data-signal-error-for="Cidade{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Cidade" data-fieldname="Cidade" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Cidade}">
+		{BEGIN Cidade_label}{$label Fornecedores Cidade }{END Cidade_label}
+	</label>
+	<div class="r-edit-field">
+		{$Cidade_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Cidade">
+		<div class="text-muted" >
+		{$tooltip Fornecedores Cidade }		</div>
+	</div>
+</div>
+
+
+{END Cidade_fieldblock}
+											
+{BEGIN Estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Estado}  r-vertical-field" 
+	data-signal-error-for="Estado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="Estado" data-fieldname="Estado" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Estado}">
+		{BEGIN Estado_label}{$label Fornecedores Estado }{END Estado_label}
+	</label>
+	<div class="r-edit-field">
+		{$Estado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Estado">
+		<div class="text-muted" >
+		{$tooltip Fornecedores Estado }		</div>
+	</div>
+</div>
+
+
+{END Estado_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Salvar			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							Limpar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Voltar à Lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancela			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

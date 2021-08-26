@@ -1,0 +1,171 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel Paciente import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$Codigo_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
+				
+			{"text":{$Nome_pdfvalue},"hidden":"{$item_hide_import_field1}"},
+				
+				
+			{"text":{$CPF_pdfvalue},"hidden":"{$item_hide_import_field2}"},
+				
+				
+			{"text":{$RG_pdfvalue},"hidden":"{$item_hide_import_field3}"},
+				
+				
+			{"text":{$Data_de_Nascimento_pdfvalue},"hidden":"{$item_hide_import_field4}"},
+				
+				
+			{"text":{$Sexo_pdfvalue},"hidden":"{$item_hide_import_field5}"},
+				
+				
+			{"text":{$Nome_da_Mae_pdfvalue},"hidden":"{$item_hide_import_field6}"},
+				
+				
+			{"text":{$Nome_do_Pai_pdfvalue},"hidden":"{$item_hide_import_field7}"},
+				
+				
+			{"text":{$E_mail_pdfvalue},"hidden":"{$item_hide_import_field8}"},
+				
+				
+			{"text":{$Rua_pdfvalue},"hidden":"{$item_hide_import_field9}"},
+				
+				
+			{"text":{$Numero_pdfvalue},"hidden":"{$item_hide_import_field10}"},
+				
+				
+			{"text":{$Bairro_pdfvalue},"hidden":"{$item_hide_import_field11}"},
+				
+				
+			{"text":{$Cidade_pdfvalue},"hidden":"{$item_hide_import_field12}"},
+				
+				
+			{"text":{$Estado_pdfvalue},"hidden":"{$item_hide_import_field13}"},
+				
+				
+			{"text":{$Telefone_pdfvalue},"hidden":"{$item_hide_import_field14}"},
+				
+				
+			{"text":{$CEP_pdfvalue},"hidden":"{$item_hide_import_field15}"},
+				
+				
+			{"text":{$Codagendamento_pdfvalue},"hidden":"{$item_hide_import_field16}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

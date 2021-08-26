@@ -1,0 +1,8 @@
+Notificação sobre seu registro
+
+Foi concluído seu registro como usuário em %url%
+
+Clique neste link para confirmar a sua conta e concluir o seu registro:
+%activateurl%
+Caso não consiga clicar no link, copie e cole na janela de seu navegador
+

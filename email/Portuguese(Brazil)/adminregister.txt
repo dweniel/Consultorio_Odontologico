@@ -1,0 +1,4 @@
+Notificação sobre seu registro
+
+Usuário resgistrado em %url%
+

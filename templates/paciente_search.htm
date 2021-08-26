@@ -1,0 +1,524 @@
+<!doctype html><p align=center><font size=+1 color=red>Desenvolvido por Daniel Alves</font></p>
+<p align=center><font size=+1 color=red></font></p>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel Paciente search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Codigo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Codigo}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Codigo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="Codigo" data-fieldname="Codigo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Codigo}">
+		{$label Paciente Codigo }	</label>
+	<div class="r-search-option">
+		{$searchtype_Codigo}
+	</div>
+	<div class="r-search-field">
+		{$Codigo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Codigo_editcontrol1}
+	</div>
+	
+</div>
+
+{END Codigo_fieldblock}
+											
+{BEGIN Nome_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Nome}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Nome{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="Nome" data-fieldname="Nome" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Nome}">
+		{$label Paciente Nome }	</label>
+	<div class="r-search-option">
+		{$searchtype_Nome}
+	</div>
+	<div class="r-search-field">
+		{$Nome_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Nome_editcontrol1}
+	</div>
+	
+</div>
+
+{END Nome_fieldblock}
+											
+{BEGIN CPF_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CPF}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CPF{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="CPF" data-fieldname="CPF" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CPF}">
+		{$label Paciente CPF }	</label>
+	<div class="r-search-option">
+		{$searchtype_CPF}
+	</div>
+	<div class="r-search-field">
+		{$CPF_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CPF_editcontrol1}
+	</div>
+	
+</div>
+
+{END CPF_fieldblock}
+											
+{BEGIN RG_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RG}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="RG{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="RG" data-fieldname="RG" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_RG}">
+		{$label Paciente RG }	</label>
+	<div class="r-search-option">
+		{$searchtype_RG}
+	</div>
+	<div class="r-search-field">
+		{$RG_editcontrol}	</div>
+	<div class="r-search-field">
+		{$RG_editcontrol1}
+	</div>
+	
+</div>
+
+{END RG_fieldblock}
+											
+{BEGIN Data_de_Nascimento_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Data_de_Nascimento}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Data_de_Nascimento{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="Data_de_Nascimento" data-fieldname="Data de Nascimento" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Data_de_Nascimento}">
+		{$label Paciente Data_de_Nascimento }	</label>
+	<div class="r-search-option">
+		{$searchtype_Data_de_Nascimento}
+	</div>
+	<div class="r-search-field">
+		{$Data_de_Nascimento_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Data_de_Nascimento_editcontrol1}
+	</div>
+	
+</div>
+
+{END Data_de_Nascimento_fieldblock}
+											
+{BEGIN Sexo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Sexo}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Sexo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="Sexo" data-fieldname="Sexo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Sexo}">
+		{$label Paciente Sexo }	</label>
+	<div class="r-search-option">
+		{$searchtype_Sexo}
+	</div>
+	<div class="r-search-field">
+		{$Sexo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Sexo_editcontrol1}
+	</div>
+	
+</div>
+
+{END Sexo_fieldblock}
+											
+{BEGIN Nome_da_Mae_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Nome_da_Mae}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Nome_da_Mae{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="Nome_da_Mae" data-fieldname="Nome da Mae" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Nome_da_Mae}">
+		{$label Paciente Nome_da_Mae }	</label>
+	<div class="r-search-option">
+		{$searchtype_Nome_da_Mae}
+	</div>
+	<div class="r-search-field">
+		{$Nome_da_Mae_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Nome_da_Mae_editcontrol1}
+	</div>
+	
+</div>
+
+{END Nome_da_Mae_fieldblock}
+											
+{BEGIN Nome_do_Pai_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Nome_do_Pai}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Nome_do_Pai{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="Nome_do_Pai" data-fieldname="Nome do Pai" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Nome_do_Pai}">
+		{$label Paciente Nome_do_Pai }	</label>
+	<div class="r-search-option">
+		{$searchtype_Nome_do_Pai}
+	</div>
+	<div class="r-search-field">
+		{$Nome_do_Pai_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Nome_do_Pai_editcontrol1}
+	</div>
+	
+</div>
+
+{END Nome_do_Pai_fieldblock}
+											
+{BEGIN E_mail_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_E_mail}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="E_mail{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="E_mail" data-fieldname="E-mail" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_E_mail}">
+		{$label Paciente E_mail }	</label>
+	<div class="r-search-option">
+		{$searchtype_E_mail}
+	</div>
+	<div class="r-search-field">
+		{$E_mail_editcontrol}	</div>
+	<div class="r-search-field">
+		{$E_mail_editcontrol1}
+	</div>
+	
+</div>
+
+{END E_mail_fieldblock}
+											
+{BEGIN Rua_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Rua}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Rua{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="Rua" data-fieldname="Rua" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Rua}">
+		{$label Paciente Rua }	</label>
+	<div class="r-search-option">
+		{$searchtype_Rua}
+	</div>
+	<div class="r-search-field">
+		{$Rua_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Rua_editcontrol1}
+	</div>
+	
+</div>
+
+{END Rua_fieldblock}
+											
+{BEGIN Numero_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Numero}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Numero{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="Numero" data-fieldname="Numero" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Numero}">
+		{$label Paciente Numero }	</label>
+	<div class="r-search-option">
+		{$searchtype_Numero}
+	</div>
+	<div class="r-search-field">
+		{$Numero_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Numero_editcontrol1}
+	</div>
+	
+</div>
+
+{END Numero_fieldblock}
+											
+{BEGIN Bairro_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Bairro}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Bairro{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="Bairro" data-fieldname="Bairro" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Bairro}">
+		{$label Paciente Bairro }	</label>
+	<div class="r-search-option">
+		{$searchtype_Bairro}
+	</div>
+	<div class="r-search-field">
+		{$Bairro_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Bairro_editcontrol1}
+	</div>
+	
+</div>
+
+{END Bairro_fieldblock}
+											
+{BEGIN Cidade_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Cidade}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Cidade{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="Cidade" data-fieldname="Cidade" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Cidade}">
+		{$label Paciente Cidade }	</label>
+	<div class="r-search-option">
+		{$searchtype_Cidade}
+	</div>
+	<div class="r-search-field">
+		{$Cidade_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Cidade_editcontrol1}
+	</div>
+	
+</div>
+
+{END Cidade_fieldblock}
+											
+{BEGIN Estado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Estado}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Estado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="Estado" data-fieldname="Estado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Estado}">
+		{$label Paciente Estado }	</label>
+	<div class="r-search-option">
+		{$searchtype_Estado}
+	</div>
+	<div class="r-search-field">
+		{$Estado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Estado_editcontrol1}
+	</div>
+	
+</div>
+
+{END Estado_fieldblock}
+											
+{BEGIN Telefone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Telefone}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Telefone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="Telefone" data-fieldname="Telefone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Telefone}">
+		{$label Paciente Telefone }	</label>
+	<div class="r-search-option">
+		{$searchtype_Telefone}
+	</div>
+	<div class="r-search-field">
+		{$Telefone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Telefone_editcontrol1}
+	</div>
+	
+</div>
+
+{END Telefone_fieldblock}
+											
+{BEGIN CEP_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CEP}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CEP{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="CEP" data-fieldname="CEP" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CEP}">
+		{$label Paciente CEP }	</label>
+	<div class="r-search-option">
+		{$searchtype_CEP}
+	</div>
+	<div class="r-search-field">
+		{$CEP_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CEP_editcontrol1}
+	</div>
+	
+</div>
+
+{END CEP_fieldblock}
+											
+{BEGIN Codagendamento_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Codagendamento}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Codagendamento{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="Codagendamento" data-fieldname="Codagendamento" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Codagendamento}">
+		{$label Paciente Codagendamento }	</label>
+	<div class="r-search-option">
+		{$searchtype_Codagendamento}
+	</div>
+	<div class="r-search-field">
+		{$Codagendamento_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Codagendamento_editcontrol1}
+	</div>
+	
+</div>
+
+{END Codagendamento_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Limpar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Voltar à Lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancela			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
